@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block title%}index{% endblock%}
+
+{% block content%}
+{%  load static %}
+
+<style>
+  .carousel-item {
+    height: 500px;
+}
+</style>
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/images/pexels-pixabay-207691.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/pexels-emily-ranquist-1205651 (2).jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/images/pexels-pixabay-207684.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<hr>
+
+
+<div class="imag1">
+  <img src="{% static '/images/pexels-pixabay-207684.jpg' %}">
+</div>
+
+
+<div class="abt">
+      
+  <h1 class="welhd"><b>WELCOME TO REDLANDS COLLEGE OF ENGINEERING</b></h1>
+    
+  <p class="weltxt">The College is affiliated to APJ Abdul Kalam Technological University
+    and the courses are approved by the All India Council for Technical Education.
+    The College is managed by Redlands Foundation, India. This technical institution
+    is developed by blending the concepts of Lord Buddha: Kindness, Humanism and
+    Equality – with the modern trends in the field of technology. Redlands College has a 
+    noteworthy history of imparting education to many generations and the institution 
+    thrives to greater excellence in teaching, training and research. 
+  <p>
+
+  <a class="btn btn-outline-info" href="/templates/aboutus.html" role="button">Read more</a>
+
+    
+</div>
+
+
+<div class="placements">
+  <h2 class="plmnthd"><b>PLACEMENTS</b></h2>
+
+  <img src="{% static '/images/pexels-fauxels-3184430.jpg' %}" class="plmntimg">
+
+  <p class="plmntpg">The Training & Placement Cell interacts frequently with students and helps them realize 
+    their skill areas. The TPC implements custom made training programmes in soft skill and 
+    personality development. Special coaching in communicative English is given to students 
+    and the cell also arranges mock interviews and group discussions.The Placement Office 
+    strives to provide the students appropriate placements that leverage their uniqueness 
+    and strengths. It also enables the students to discover their passion and area of 
+    interests to choose the best career.
+  </p>
+
+  <a class="btn btn-outline-info" href="/templates/placement.html" target="blank">Read more</a>
+  
+</div>
+
+<div class="corsec">
+  <div class="card text-bg-dark">
+    <img src="{% static '/images/pexels-oleksandr-tiupa-192136.jpg' %}" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h3 class="card-title">OUR COURSES</h5>
+      <h4>B.Tech</h3>
+      <li>Electronics and Communication Engineering</li>
+      <li>Computer Science Engineering</li>
+      <li>Mechanical Engineering</li>
+      <li>Civil Engineering</li>
+      <li>Electrical and Electronics Engineering</li>
+      <li>Chemical Engineering</li>
+    </div>
+  </div>
+</div>
+
+
+{% endblock%}
+
+<!-- {% static '' %} -->

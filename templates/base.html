@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title%}{% endblock%}</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <meta charset="utf-8">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css ">
+  </head>
+
+  <body>
+
+    <nav class="navbar bg-secondary navbar-expand-md ">
+      <div class="container">
+        <div class="col-2 text-left pl-md-0">
+          <h3 class="text-white"> Redlands College </h3>
+        </div>
+        
+        <div
+          class="collapse navbar-collapse justify-content-center col-md-8 navbar-collapse-3">
+          <ul class="navbar-nav justify-content-center  fw-bold">
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="{% url 'home' %}">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'aboutus' %}">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'departments' %}">DEPARTMENTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'admission' %}">ADMISSION</a>
+            </li>
+			 <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'placement' %}">PLACEMENT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="{% url 'contactus' %}">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+
+
+
+
+    {% block content%}{% endblock%}
+
+
+    <footer class="bg-secondary">
+      <p>@Copyright 2022 | Redlands College of Engineering | Kerala</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>
+</body>
+</html>
